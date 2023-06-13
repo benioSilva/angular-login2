@@ -1,0 +1,8 @@
+<nav class="navbar" style="background-color: #e3f2fd;">
+    <table>
+        <tr>
+            <th *ngFor="let item of listLink"><app-menu-link [link]="item.link" [label]="item.label"></app-menu-link>
+            </th>
+        </tr>
+    </table>
+</nav>

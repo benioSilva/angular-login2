@@ -1,0 +1,23 @@
+<h3>Lista de Cadastros</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">USER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">ALTERAR STATUS</th>
+            <th scope="col">EXCLUIR CONTA</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr *ngFor="let dados of storageDados">
+            <th scope="row"> {{dados.id}} </th>
+            <td> {{dados.username}} </td>
+            <td> {{dados.email}} </td>
+            <td> {{dados.status}} </td>
+            <td><button class="btn btn-warning" (click)="trocarStatus(dados.id)">Alterar</button></td>
+            <td><button class="btn btn-danger" (click)="deletarUser(dados.id)">Excluir</button></td>
+        </tr>
+    </tbody>
+</table>

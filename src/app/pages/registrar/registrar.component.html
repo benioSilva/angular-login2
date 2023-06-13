@@ -1,0 +1,22 @@
+<body>
+    <h3>Registro</h3>
+    <form #fLogin="ngForm" (ngSubmit)="onclickSalvar(fLogin)">
+        <div>
+            <input type="text" placeholder="Username" name="username" [(ngModel)]="form.username" />
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="email" name="email" [(ngModel)]="form.email" />
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="senha" name="senha" [(ngModel)]="form.senha" />
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="repetir-senha" name="repetirSenha" [(ngModel)]="form.repetirSenha" />
+        </div>
+        <br>
+        <button class="btn btn-success">Criar!</button>
+    </form>
+</body>

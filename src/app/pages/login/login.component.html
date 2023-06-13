@@ -1,0 +1,12 @@
+<h3>Login</h3>
+
+<form #fEntrar = 'ngForm' (submit)="loginAtivo(fEntrar)" >
+    <input type="text" name="userLogin" placeholder="username" (ngModel)="form.userLogin">
+    <br>
+    <br>
+    <input type="password" name="senha" placeholder="senha" (ngModel)="form.senha">
+    <br>
+    <br>
+    <button class="btn btn-success">Entrar</button>
+
+</form>
